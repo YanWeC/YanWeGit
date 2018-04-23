@@ -1,57 +1,57 @@
 
 @import 'property.less';
-
+@import 'login.less';
 @import 'variable.less';
 
 .fs(@px) {
-  font-size: unit(@px / 37.5, rem);
+  font-size: unit(@px, rem);
 }
 
 .w(@px) {
-  width: unit(@px / 37.5, rem);
+  width: unit(@px, rem);
 }
 
 .h(@px) {
-  height: unit(@px / 37.5, rem);
+  height: unit(@px, rem);
 }
 
 .lh(@px) {
-  line-height: unit(@px / 37.5, rem);
+  line-height: unit(@px, rem);
 }
 
 .mt(@px) {
-  margin-top: unit(@px / 37.5, rem);
+  margin-top: unit(@px, rem);
 }
 .ml(@px) {
-  margin-top: unit(@px / 37.5, rem);
+  margin-top: unit(@px, rem);
 }
 .mr(@px) {
-  margin-top: unit(@px / 37.5, rem);
+  margin-top: unit(@px, rem);
 }
 .mb(@px) {
-  margin-top: unit(@px / 37.5, rem);
+  margin-top: unit(@px, rem);
 }
 .pt(@px) {
-  padding-top: unit(@px / 37.5, rem);
+  padding-top: unit(@px, rem);
 }
 .pl(@px) {
-  padding-left: unit(@px / 37.5, rem);
+  padding-left: unit(@px, rem);
 }
 .pr(@px) {
-  padding-right: unit(@px / 37.5, rem);
+  padding-right: unit(@px, rem);
 }
 .pb(@px) {
-  padding-bottom: unit(@px / 37.5, rem);
+  padding-bottom: unit(@px, rem);
 }
 
 html,body {
   height: 100%;
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 body {
   background-color: @bodyBgColor;
-  .fs(16);
 }
 button {
   border-width: 0;
@@ -137,4 +137,13 @@ button {
   visibility: visible;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+}
+// public background
+.publicbg{
+  background: #f6f6f6;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  bottom: 0;
 }

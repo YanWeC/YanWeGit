@@ -37,6 +37,10 @@ var CoreRouter = function CoreRouter($stateProvider, $urlRouterProvider, mePageL
     url: '/main',
     templateUrl: 'view/main.html',
     controller: 'mainCtrl'
+  }).state('login', {
+    url: '/login',
+    templateUrl: 'view/login.html',
+    controller: 'loginCtrl'
   });
   $urlRouterProvider.otherwise('main');
 };
@@ -71,6 +75,34 @@ angular.module('app').config(['$validationProvider', function ($validationProvid
   };
   $validationProvider.setExpression(expression).setDefaultMsg(defaultMsg);
 }]);
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var loginCtrl = function () {
+    function loginCtrl($http, $scope, $state) {
+        _classCallCheck(this, loginCtrl);
+
+        $scope.title = '111';
+        this.$state = $state;
+        this.$scope = $scope;
+        $scope.login = {
+            click: this.click
+        };
+    }
+
+    _createClass(loginCtrl, [{
+        key: 'click',
+        value: function click() {}
+    }]);
+
+    return loginCtrl;
+}();
+
+loginCtrl.$inject = ['$http', '$scope', '$state'];
+angular.module('app').controller('loginCtrl', loginCtrl);
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }

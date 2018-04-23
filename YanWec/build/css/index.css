@@ -49,15 +49,129 @@
 .va-b {
   vertical-align: bottom;
 }
+.login .Login_top {
+  height: 3.22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .Login_top div {
+  font-size: .26rem;
+  text-align: center;
+}
+.login .Login_top div img {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+}
+.login .Login_top div p {
+  margin: 0;
+  margin-top: .2rem;
+  color: #333;
+}
+.login .login_form {
+  margin: 0 .715rem;
+}
+.login .login_form .row_one {
+  display: flex;
+  height: 0.89rem;
+  align-items: center;
+  border: 1px solid #c99e64;
+  background: #fff;
+  font-size: .26rem;
+  border-radius: .445rem;
+  color: #555;
+}
+.login .login_form .row_one span {
+  font-size: .26rem;
+  width: 1.54rem;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+.login .login_form .row_one input {
+  flex: 1;
+  border-top-right-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+  border: none;
+  outline: none;
+  height: .8rem;
+}
+.login .login_form input::-webkit-input-placeholder {
+  font-size: .26rem;
+  color: #999;
+}
+.login .login_form .row_two {
+  display: flex;
+  height: 0.89rem;
+  margin-top: .5rem;
+  align-items: center;
+  border: 1px solid #c99e64;
+  background: #fff;
+  font-size: .26rem;
+  border-radius: .445rem;
+  color: #555;
+}
+.login .login_form .row_two span {
+  font-size: .26rem;
+  width: 1.54rem;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+.login .login_form .row_two input {
+  flex: 1;
+  border-top-right-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+  border: none;
+  outline: none;
+  height: .8rem;
+}
+.login .login_form button {
+  height: 0.89rem;
+  width: 100%;
+  background: #c79f5d;
+  color: #fff;
+  font-size: .3rem;
+  font-weight: 320;
+  border-radius: .445rem;
+}
+.login .loginSelect {
+  margin-top: .5rem;
+  font-size: .26rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 0.26rem;
+  align-items: center;
+}
+.login .loginSelect span {
+  width: 1.54rem;
+  text-align: center;
+}
+.login .loginSelect span:first-child {
+  color: #999;
+  border-right: 1px solid #999;
+}
+.login .loginSelect span:last-child {
+  color: #666;
+}
+.login .loginBottom {
+  margin: 0 1.07rem;
+  position: fixed;
+  bottom: 1rem;
+}
+.login .loginBottom img {
+  width: 5.36rem;
+  height: 0.78rem;
+}
 html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 body {
   background-color: #eee;
-  font-size: 0.42666667rem;
 }
 button {
   border-width: 0;
@@ -140,4 +254,12 @@ button {
   visibility: visible;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+}
+.publicbg {
+  background: #f6f6f6;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
